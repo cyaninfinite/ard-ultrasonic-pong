@@ -1,11 +1,8 @@
 /*
-
   Arduino Ultrasonic Pong
   >> The classic pong game that uses an ultrasonic sensor to move the paddle.
      Powered by Arduino & u8g2 lib.
-
   By: 1487Quantum (https://github.com/1487quantum)
-
 */
 #include <U8g2lib.h>
 
@@ -24,8 +21,9 @@ U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
 
 //Ultrasound
 long duration, dist;
-//Active range,cm (min,max)
-uint8_t activeDist[2] = {10,40};
+//Active range,cm
+uint8_t distMin = 10;
+uint8_t distMax = 40;
 
 //Ball
 uint8_t bw = 4;   //Width & height same
@@ -67,13 +65,13 @@ uint8_t winningScore = 11;    //Score to reach to win, keep it max at 99 (else t
 
 //Activation range for controls
 bool activeRange() {
-  return  dist >= activeDist[0] && dist <= activeDist[1] ;
+  return  dist >= distMin && dist <= distMax ;
 }
 
 void movPaddle() {
   //Control paddle 1 via distance
-  if (activeRange) {
-    p1y = map(dist, activeDist[0], activeDist[1], 0, HG);   //Remap distance to screen height (max)
+  if (activeRange()) {
+    p1y = map(dist, distMin, distMax, 0, HG);   //Remap distance to screen height (max)
   } else {
     if (by < p1y) {
       p1y -= p1sy;
