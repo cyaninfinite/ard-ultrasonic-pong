@@ -168,7 +168,9 @@ void updateScore(bool firstply) {
     //Show gameover screen
     GameOver(firstply);
     //Reset score if winning score reached
-    (firstply ? p1 : p2)->resetScore();
+    p1->resetScore();
+    p2->resetScore();
+
   }
   delay(500);  //Pause 0.5 second after player score 1 point
 }
