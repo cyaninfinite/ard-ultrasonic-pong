@@ -1,5 +1,7 @@
 # ard-ultrasonic-pong
-<a href="LICENSE" ><img src="https://img.shields.io/github/license/1487quantum/ard-ultrasonic-pong?style=for-the-badge"/></a>
+<a href="LICENSE" ><img src="https://img.shields.io/github/license/1487quantum/ard-ultrasonic-pong?style=flat-square"/></a>
+<a href="https://github.com/1487quantum/ard-ultrasonic-pong/actions/workflows/ard-ci.yml" ><img src="https://img.shields.io/github/workflow/status/1487quantum/ard-ultrasonic-pong/Arduino-CI?label=Build&logo=arduino&style=flat-square"/></a>
+
 <a href="https://cyaninfinite.com/ultrasonic-sensor-projects/" ><img src="https://img.shields.io/badge/Documentation-@Cyaninfinite-blue?style=for-the-badge"/></a>
 
 The classic pong game that uses an ultrasonic sensor to move the paddle. Powered by Arduino &amp; u8g2 lib.
