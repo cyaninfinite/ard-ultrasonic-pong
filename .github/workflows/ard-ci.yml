@@ -1,4 +1,4 @@
-name: Arduino CI
+name: Arduino-CI
 
 # Controls when the action will run. 
 on:
