@@ -1,6 +1,6 @@
 # ard-ultrasonic-pong
-<a href="LICENSE" ><img src="https://img.shields.io/github/license/1487quantum/ard-ultrasonic-pong?style=flat-square"/></a>
-<a href="https://github.com/1487quantum/ard-ultrasonic-pong/actions/workflows/ard-ci.yml" ><img src="https://img.shields.io/github/workflow/status/1487quantum/ard-ultrasonic-pong/Arduino-CI?label=Build&logo=arduino&style=flat-square"/></a>
+<a href="LICENSE" ><img src="https://img.shields.io/github/license/cyaninfinite/ard-ultrasonic-pong?style=flat-square"/></a>
+<a href="https://github.com/cyaninfinite/ard-ultrasonic-pong/actions/workflows/ard-ci.yml" ><img src="https://img.shields.io/github/workflow/status/cyaninfinite/ard-ultrasonic-pong/Arduino-CI?label=Build&logo=arduino&style=flat-square"/></a>
 
 <a href="https://cyaninfinite.com/ultrasonic-sensor-projects/" ><img src="https://img.shields.io/badge/Documentation-@Cyaninfinite-blue?style=for-the-badge"/></a>
 
